@@ -127,6 +127,7 @@ p { margin: 0 0 1em; }
 .howto summary { cursor: pointer; font-weight: 700; padding: 10px 0; }
 .howto ol { padding-left: 20px; margin: 4px 0 14px; font-size: 15px; }
 .howto li { margin-bottom: 8px; }
+.howto code, .faq code { background: var(--surface); padding: 1px 6px; border-radius: 6px; font-size: 14px; word-break: break-all; }
 .howto ul { padding-left: 18px; margin: 6px 0; }
 #dlCount { margin-top: 20px; min-height: 1.6em; }
 .sub-h { margin-top: 40px; }

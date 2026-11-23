@@ -10,7 +10,7 @@ This repository hosts the [Voice Studio website](https://jumppack.github.io/voic
 |---|---|
 | macOS (Apple silicon, macOS 12 or later) | [Voice-Studio-mac-arm64.dmg](https://github.com/jumppack/voice-studio-app/releases/latest/download/Voice-Studio-mac-arm64.dmg) |
 | Windows | Coming soon |
-| Linux | Coming soon |
+| Linux (64-bit x86-64) | [Voice-Studio-linux-x86_64.tar.gz](https://github.com/jumppack/voice-studio-app/releases/latest/download/Voice-Studio-linux-x86_64.tar.gz) |
 
 All versions are on the [Releases](https://github.com/jumppack/voice-studio-app/releases) page.
 
@@ -22,6 +22,12 @@ All versions are on the [Releases](https://github.com/jumppack/voice-studio-app/
    - **macOS 14 or earlier:** right-click Voice Studio, choose **Open**, then **Open** again.
 3. Click **Set up**. The first time, it installs its engine (about 1 GB) and shows a notification when it's ready.
 4. On the Setup page, click **Download everything** for the voice models.
+
+## Installing on Linux
+
+1. `tar -xzf Voice-Studio-linux-x86_64.tar.gz`
+2. `./VoiceStudio/voice-studio`. The first time, it installs its engine (about 1 GB, about 3 GB with an NVIDIA graphics card) into `~/.local/share/voice-studio` and adds Voice Studio to your applications menu.
+3. Voice Studio opens in your web browser; keep its terminal window open while you use it.
 
 No account or login is needed, and after setup everything runs offline.
 

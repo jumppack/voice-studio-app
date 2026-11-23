@@ -7,16 +7,21 @@
   var os = /Mac/i.test(plat) || /Mac OS X/i.test(ua) ? "mac" : /Win/i.test(plat) || /Windows/i.test(ua) ? "windows"
     : /Linux|X11/i.test(plat + ua) && !/Android/i.test(ua) ? "linux" : /Android|iPhone|iPad/i.test(ua) ? "mobile" : "other";
   var hero = document.getElementById("heroDownload"), heroText = document.getElementById("heroDownloadText"), note = document.getElementById("heroNote");
-  var mac = document.getElementById("macLink");
+  var mac = document.getElementById("macLink"), lin = document.getElementById("linuxLink");
 
   if (os === "mac") {
     hero.href = mac.href;
     heroText.textContent = "Download for Mac";
     note.textContent = "For Mac with Apple silicon (M1 or later). Free, 16 MB.";
     document.getElementById("dl-mac").classList.add("recommended");
-  } else if (os === "windows" || os === "linux") {
+  } else if (os === "linux") {
+    hero.href = lin.href;
+    heroText.textContent = "Download for Linux";
+    note.textContent = "For 64-bit Linux. Free, 17 MB.";
+    document.getElementById("dl-linux").classList.add("recommended");
+  } else if (os === "windows") {
     heroText.textContent = "See downloads";
-    note.textContent = (os === "windows" ? "Windows" : "Linux") + " is coming soon. Voice Studio is available for Mac now.";
+    note.textContent = "Windows is coming soon. Voice Studio is available for Mac and Linux now.";
   } else if (os === "mobile") {
     heroText.textContent = "See downloads";
     note.textContent = "Voice Studio is a desktop app. Open this page on your computer to download it.";
@@ -34,6 +39,12 @@
       var v = (latest.tag_name || "").replace(/^v/, "");
       var date = latest.published_at ? new Date(latest.published_at).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" }) : "";
       document.getElementById("dlMeta").textContent = "Version " + v + (date ? " · released " + date : "") + " · free";
+      var tgz = (latest.assets || []).filter(function (a) { return /linux.*\.tar\.gz$/i.test(a.name); })[0];
+      if (tgz) {
+        lin.href = tgz.browser_download_url;
+        if (os === "linux") hero.href = tgz.browser_download_url;
+        document.getElementById("linuxSize").textContent = ".tar.gz · " + mb(tgz.size);
+      }
       if (dmg) {
         mac.href = dmg.browser_download_url;
         if (os === "mac") hero.href = dmg.browser_download_url;

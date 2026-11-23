@@ -47,7 +47,7 @@
         </a>
         <a class="btn btn-lg" href="#how">How it works</a>
       </div>
-      <p class="small muted" id="heroNote">For Mac with Apple silicon. Windows and Linux are coming soon.</p>
+      <p class="small muted" id="heroNote">For Mac with Apple silicon and 64-bit Linux. Windows is coming soon.</p>
     </div>
     <figure class="hero-shot">
       <img src="assets/separate.png" alt="Voice Studio's Separate speakers screen: a recording added, options for how many people talk, background removal and what to keep" width="1280" height="900" loading="eager">
@@ -192,13 +192,25 @@
         <span class="btn btn-block btn-disabled" role="note">Coming soon</span>
         <p class="small muted">Being prepared and tested. Works best with an NVIDIA graphics card; other PCs use the processor, more slowly.</p>
       </article>
-      <article class="card dl soon" aria-labelledby="dl-linux-title">
+      <article class="card dl" id="dl-linux" aria-labelledby="dl-linux-title">
         <div class="dl-head">
           <svg class="os" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2.5c-2 0-3.2 1.7-3.2 4 0 1.4.3 2.2-.4 3.6-.9 1.6-2.9 3.9-2.9 6.7 0 .8.2 1.5.6 2.1-.8.4-1.6.9-1.6 1.6 0 1 1.6 1.2 3.4 1.5 1.4.2 2.3.5 4.1.5s2.7-.3 4.1-.5c1.8-.3 3.4-.5 3.4-1.5 0-.7-.8-1.2-1.6-1.6.4-.6.6-1.3.6-2.1 0-2.8-2-5.1-2.9-6.7-.7-1.4-.4-2.2-.4-3.6 0-2.3-1.2-4-3.2-4z" fill="currentColor"/></svg>
-          <div><h3 id="dl-linux-title">Linux</h3><p class="small muted">64-bit, Ubuntu 22.04 or similar</p></div>
+          <div><h3 id="dl-linux-title">Linux</h3><p class="small muted">64-bit (x86-64), Ubuntu 22.04 or similar</p></div>
         </div>
-        <span class="btn btn-block btn-disabled" role="note">Coming soon</span>
-        <p class="small muted">Being prepared and tested. Works best with an NVIDIA graphics card; other PCs use the processor, more slowly.</p>
+        <a class="btn btn-primary btn-block" id="linuxLink" href="https://github.com/jumppack/voice-studio-app/releases/latest/download/Voice-Studio-linux-x86_64.tar.gz">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="ic"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="btn-lines"><span>Download for Linux</span><span class="btn-sub" id="linuxSize">.tar.gz · 17 MB</span></span>
+        </a>
+        <details class="howto">
+          <summary>How to install on Linux</summary>
+          <ol>
+            <li>Unpack it: <code>tar -xzf Voice-Studio-linux-x86_64.tar.gz</code></li>
+            <li>Run <code>./VoiceStudio/voice-studio</code>. The first time, it installs its engine (about 1 GB; about 3 GB with an NVIDIA graphics card, which it detects by itself) into <code>~/.local/share/voice-studio</code>.</li>
+            <li>Voice Studio opens in your web browser. Keep its terminal window open while you use it; close it to quit.</li>
+            <li>Next time, open <strong>Voice Studio</strong> from your applications menu.</li>
+          </ol>
+          <p class="small">Uses the processor, or an NVIDIA graphics card if you have one. <em>Speak like the voice</em> isn't available on Linux yet.</p>
+        </details>
       </article>
     </div>
     <p class="small muted center" id="dlCount" aria-live="polite"></p>
@@ -208,7 +220,7 @@
       <table>
         <caption class="sr-only">System requirements</caption>
         <tbody>
-          <tr><th scope="row">Computer</th><td>Mac with Apple silicon (M1 or later). Windows and Linux coming soon.</td></tr>
+          <tr><th scope="row">Computer</th><td>Mac with Apple silicon (M1 or later), or a 64-bit Linux PC. Windows coming soon.</td></tr>
           <tr><th scope="row">Memory</th><td>8 GB minimum, 16 GB or more recommended</td></tr>
           <tr><th scope="row">Disk space</th><td>About 9 GB with every feature (the voice models are most of it)</td></tr>
           <tr><th scope="row">Internet</th><td>Only for the one-time setup, and when you paste a video link</td></tr>
@@ -244,7 +256,8 @@
     <details class="faq"><summary>Does it work offline?</summary><p>Yes. After the one-time setup everything runs offline. Only pasting a video link needs the internet.</p></details>
     <details class="faq"><summary>Which languages does it speak?</summary><p>English, plus 22 more with the optional language pack: Arabic, Chinese, Danish, Dutch, Finnish, French, German, Greek, Hebrew, Hindi, Italian, Japanese, Korean, Malay, Norwegian, Polish, Portuguese, Russian, Spanish, Swahili, Swedish and Turkish.</p></details>
     <details class="faq"><summary>How well does Separate speakers work?</summary><p>On test conversations of two to four people over film soundtracks, it found the right number of people every time, and about 88 % of what you hear in a person's track is that person. Where two people talk at once, that moment goes to the louder voice, and grunts or effects on top of someone's words stay in their track.</p></details>
-    <details class="faq"><summary>When are Windows and Linux coming?</summary><p>They're being prepared and tested. This page will offer them as soon as they're ready.</p></details>
+    <details class="faq"><summary>When is Windows coming?</summary><p>It's being prepared and tested on a real Windows PC. This page will offer it as soon as it's ready.</p></details>
+    <details class="faq"><summary>Does it use my graphics card?</summary><p>On a Mac it uses the Apple GPU. On Linux (and soon Windows) it uses an NVIDIA graphics card if you have one, and the processor otherwise, which works but is slower: a short sentence takes about 15 seconds instead of 2 or 3.</p></details>
   </div>
 </section>
 
