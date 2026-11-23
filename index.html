@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voice Studio: voice cloning, re-voicing and speaker separation on your own computer</title>
+<meta name="description" content="Voice Studio is a free desktop app: text to speech in any voice, re-voice whole recordings, and split a video into one track per person plus the background. Everything runs on your computer.">
+<meta property="og:title" content="Voice Studio">
+<meta property="og:description" content="Clone voices, re-voice recordings and split conversations into one track per person, all on your own computer.">
+<meta property="og:image" content="assets/separate.png">
+<meta name="theme-color" content="#ece6f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#211d2c" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="#" aria-label="Voice Studio home"><img src="assets/icon.png" alt="" width="40" height="40"><span>Voice Studio</span></a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-sm btn-primary" href="#download">Download</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Free desktop app · runs on your computer</p>
+      <h1 id="hero-title">Clone voices, re-voice recordings and split any conversation into one track per person.</h1>
+      <p class="lead">Type text and hear it in a voice you choose. Turn a whole recording into another voice. Take a podcast, interview or video and get a separate track for every person talking, plus the background music. Nothing you record or make is uploaded anywhere.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" id="heroDownload" href="#download">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="ic"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span id="heroDownloadText">Download Voice Studio</span>
+        </a>
+        <a class="btn btn-lg" href="#how">How it works</a>
+      </div>
+      <p class="small muted" id="heroNote">For Mac with Apple silicon. Windows and Linux are coming soon.</p>
+    </div>
+    <figure class="hero-shot">
+      <img src="assets/separate.png" alt="Voice Studio's Separate speakers screen: a recording added, options for how many people talk, background removal and what to keep" width="1280" height="900" loading="eager">
+    </figure>
+  </div>
+</section>
+
+<section class="strip" aria-label="At a glance">
+  <ul class="wrap strip-list">
+    <li><strong>On your computer</strong><span>No cloud, no account, no tracking</span></li>
+    <li><strong>One-click setup</strong><span>Downloads its models for you, with progress</span></li>
+    <li><strong>23 languages</strong><span>English, Hindi, Spanish, Chinese and more</span></li>
+    <li><strong>Honest about AI</strong><span>Every generated voice is watermarked</span></li>
+  </ul>
+</section>
+
+<section id="features" class="section" aria-labelledby="features-title">
+  <div class="wrap">
+    <h2 id="features-title">Everything you need to work with voices</h2>
+    <p class="section-lead">Six tools in one app, sharing one library of voices.</p>
+    <div class="cards">
+      <article class="card feature">
+        <div class="f-icon tone-lilac" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l1.9 5.6L19.5 10l-5.6 1.9L12 17.5l-1.9-5.6L4.5 10l5.6-1.4z" fill="currentColor"/></svg></div>
+        <h3>Text to speech</h3>
+        <p>Type anything and hear it in one of your voices, in English or 22 other languages. Adjust expressiveness, pacing and depth, or pick a preset.</p>
+      </article>
+      <article class="card feature">
+        <div class="f-icon tone-sky" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 9h13l-3.5-3.5M19 15H6l3.5 3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Speech to speech</h3>
+        <p>Give it a recording of any length, even 20 minutes or more. The same words come out in another voice, keeping the original timing or the new voice's own delivery.</p>
+      </article>
+      <article class="card feature">
+        <div class="f-icon tone-mint" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3.2" fill="currentColor"/><circle cx="16.5" cy="9.5" r="2.6" fill="currentColor"/><path d="M2.5 19a5.5 5.5 0 0 1 11 0zM12.5 19.5a4.5 4.5 0 0 1 9 0z" fill="currentColor"/></svg></div>
+        <h3>Separate speakers</h3>
+        <p>Drop in a podcast, interview or video. Get one track per person, plus the background music and effects on their own, full length and in sync with the video.</p>
+      </article>
+      <article class="card feature">
+        <div class="f-icon tone-peach" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 6v12M12 4v16M19 8v8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="5" cy="10" r="2.2" fill="currentColor"/><circle cx="12" cy="14" r="2.2" fill="currentColor"/><circle cx="19" cy="11" r="2.2" fill="currentColor"/></svg></div>
+        <h3>Mix</h3>
+        <p>Combine any tracks with their own volumes: one person with the background, or the scene with someone removed. Preview it, then save one file.</p>
+      </article>
+      <article class="card feature">
+        <div class="f-icon tone-lemon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="8.5" y="3" width="7" height="12" rx="3.5" fill="currentColor"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M8.5 21h7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>Your voices</h3>
+        <p>Record your own voice in a few minutes with guided scripts and a quality check, add short clips of voices you have permission to use, or pick anyone from a separated recording.</p>
+      </article>
+      <article class="card feature">
+        <div class="f-icon tone-lilac" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 14l-2.5 2.5a3.5 3.5 0 0 1-5-5L5 9M14 10l2.5-2.5a3.5 3.5 0 0 1 5 5L19 15M9 15l6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+        <h3>Open a link</h3>
+        <p>Paste a link to a public video instead of a file. Only the sound is streamed; the video itself is never downloaded.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="screenshots" class="section alt" aria-labelledby="shots-title">
+  <div class="wrap">
+    <h2 id="shots-title">See it in action</h2>
+    <p class="section-lead">Real screens from the app. Click a picture to see it full size.</p>
+    <div class="gallery">
+      <figure class="shot shot-wide">
+        <a href="assets/separate_results.png"><img src="assets/separate_results.png" alt="Results of Separate speakers: Person A, B and C each with their own timeline, play, rename, use as voice and save buttons, and a Background row with its waveform" loading="lazy" width="1008" height="582"></a>
+        <figcaption><strong>Separate speakers.</strong> A row per person with a letter, a pattern and a colour, a timeline of when they talk, and the background on its own.</figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="assets/studio.png"><img src="assets/studio.png" alt="Text to speech screen: voice and language pickers, the text box, length options, Preview and Generate buttons, and voice controls" loading="lazy" width="1280" height="900"></a>
+        <figcaption><strong>Text to speech.</strong> Pick a voice and language, type, and generate. Every control is measured to really change the result.</figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="assets/sts.png"><img src="assets/sts.png" alt="Speech to speech screen: a recording, a voice picker and the choice between keeping the original timing or speaking like the voice" loading="lazy" width="1280" height="900"></a>
+        <figcaption><strong>Speech to speech.</strong> Re-voice a whole recording, keeping its timing for video or taking on the new voice's delivery.</figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="assets/mix.png"><img src="assets/mix.png" alt="Mix section: checkboxes and volume sliders for Person A, B, C and Background, quick mix buttons, a preview timeline and a Save mix button" loading="lazy" width="972" height="451"></a>
+        <figcaption><strong>Mix.</strong> Tick tracks, set volumes, listen, and save one file.</figcaption>
+      </figure>
+      <figure class="shot">
+        <a href="assets/setup.png"><img src="assets/setup.png" alt="Setup screen: what to download in packs with sizes, free disk space and the computer's GPU and memory" loading="lazy" width="1280" height="900"></a>
+        <figcaption><strong>One-click setup.</strong> Choose what to download, see the sizes, and watch the progress of every file.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section" aria-labelledby="how-title">
+  <div class="wrap">
+    <h2 id="how-title">Up and running in three steps</h2>
+    <ol class="steps">
+      <li class="card step">
+        <span class="step-num" aria-hidden="true">1</span>
+        <h3>Download and open</h3>
+        <p>Download the app (16 MB) and drag it to Applications. The first time you open it, it sets up its engine: about 1 GB, a few minutes.</p>
+      </li>
+      <li class="card step">
+        <span class="step-num" aria-hidden="true">2</span>
+        <h3>Get the voice models</h3>
+        <p>Click <em>Download everything</em> on the Setup page. You see the size of each part and a progress bar for every file, and you can pause and resume.</p>
+      </li>
+      <li class="card step">
+        <span class="step-num" aria-hidden="true">3</span>
+        <h3>Create</h3>
+        <p>Add a voice, then type, re-voice a recording, or separate a conversation. Save as WAV or MP3, wherever you like. From now on it works offline.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="download" class="section alt" aria-labelledby="download-title">
+  <div class="wrap">
+    <h2 id="download-title">Download</h2>
+    <p class="section-lead" id="dlMeta">Version 0.1.0 · free</p>
+    <div class="cards dl-cards">
+      <article class="card dl" id="dl-mac" aria-labelledby="dl-mac-title">
+        <div class="dl-head">
+          <svg class="os" aria-hidden="true" viewBox="0 0 24 24"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.9-.9-3.1-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.4-.9-2.4-3.8zM14.2 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3z" fill="currentColor"/></svg>
+          <div><h3 id="dl-mac-title">macOS</h3><p class="small muted">Apple silicon (M1 or later) · macOS 12 or later</p></div>
+        </div>
+        <a class="btn btn-primary btn-block" id="macLink" href="https://github.com/jumppack/voice-studio-app/releases/latest/download/Voice-Studio-mac-arm64.dmg">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="ic"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="btn-lines"><span>Download for Mac</span><span class="btn-sub" id="macSize">.dmg · 16 MB</span></span>
+        </a>
+        <details class="howto">
+          <summary>How to install on a Mac</summary>
+          <ol>
+            <li>Open the downloaded <strong>Voice-Studio-mac-arm64.dmg</strong> and drag <strong>Voice Studio</strong> to <strong>Applications</strong>.</li>
+            <li>Open Voice Studio from Applications. The app isn't signed with an Apple developer certificate yet, so macOS asks you to confirm:
+              <ul>
+                <li><strong>macOS 15 or later:</strong> if it says Apple couldn't check the app, click <em>Done</em>, open <strong>System Settings → Privacy &amp; Security</strong>, scroll down and click <strong>Open Anyway</strong> next to Voice Studio.</li>
+                <li><strong>macOS 14 or earlier:</strong> right-click (or Control-click) Voice Studio and choose <strong>Open</strong>, then <strong>Open</strong> again.</li>
+              </ul>
+            </li>
+            <li>Click <strong>Set up</strong>. It installs its engine (about 1 GB) and shows a notification when it's ready.</li>
+            <li>Voice Studio opens on its Setup page: click <strong>Download everything</strong> for the voice models.</li>
+          </ol>
+        </details>
+      </article>
+      <article class="card dl soon" aria-labelledby="dl-win-title">
+        <div class="dl-head">
+          <svg class="os" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5.5l7.5-1v7H3zM11.5 4.3L21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zM11.5 12.5H21V21l-9.5-1.3z" fill="currentColor"/></svg>
+          <div><h3 id="dl-win-title">Windows</h3><p class="small muted">Windows 10 and 11, 64-bit</p></div>
+        </div>
+        <span class="btn btn-block btn-disabled" role="note">Coming soon</span>
+        <p class="small muted">Being prepared and tested. Works best with an NVIDIA graphics card; other PCs use the processor, more slowly.</p>
+      </article>
+      <article class="card dl soon" aria-labelledby="dl-linux-title">
+        <div class="dl-head">
+          <svg class="os" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2.5c-2 0-3.2 1.7-3.2 4 0 1.4.3 2.2-.4 3.6-.9 1.6-2.9 3.9-2.9 6.7 0 .8.2 1.5.6 2.1-.8.4-1.6.9-1.6 1.6 0 1 1.6 1.2 3.4 1.5 1.4.2 2.3.5 4.1.5s2.7-.3 4.1-.5c1.8-.3 3.4-.5 3.4-1.5 0-.7-.8-1.2-1.6-1.6.4-.6.6-1.3.6-2.1 0-2.8-2-5.1-2.9-6.7-.7-1.4-.4-2.2-.4-3.6 0-2.3-1.2-4-3.2-4z" fill="currentColor"/></svg>
+          <div><h3 id="dl-linux-title">Linux</h3><p class="small muted">64-bit, Ubuntu 22.04 or similar</p></div>
+        </div>
+        <span class="btn btn-block btn-disabled" role="note">Coming soon</span>
+        <p class="small muted">Being prepared and tested. Works best with an NVIDIA graphics card; other PCs use the processor, more slowly.</p>
+      </article>
+    </div>
+    <p class="small muted center" id="dlCount" aria-live="polite"></p>
+
+    <h3 class="sub-h">What you need</h3>
+    <div class="table-wrap">
+      <table>
+        <caption class="sr-only">System requirements</caption>
+        <tbody>
+          <tr><th scope="row">Computer</th><td>Mac with Apple silicon (M1 or later). Windows and Linux coming soon.</td></tr>
+          <tr><th scope="row">Memory</th><td>8 GB minimum, 16 GB or more recommended</td></tr>
+          <tr><th scope="row">Disk space</th><td>About 9 GB with every feature (the voice models are most of it)</td></tr>
+          <tr><th scope="row">Internet</th><td>Only for the one-time setup, and when you paste a video link</td></tr>
+          <tr><th scope="row">Account</th><td>None. No sign-up, no login, no key</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="privacy" class="section" aria-labelledby="privacy-title">
+  <div class="wrap two-col">
+    <div>
+      <h2 id="privacy-title">Private by design</h2>
+      <p>Voice Studio runs entirely on your computer. It has no accounts, no cloud processing and no analytics, and other devices on your network can't reach it.</p>
+      <p>It goes online only to download the models you choose, from huggingface.co, github.com, pypi.org and dl.fbaipublicfiles.com, and to stream a video link you paste.</p>
+    </div>
+    <div>
+      <h2>Responsible by design</h2>
+      <p>Only use voices you own or have permission to use. Voice Studio asks you to confirm this before you start.</p>
+      <p>Every voice it creates carries an inaudible <strong>Perth watermark</strong> from the Chatterbox engine, so detection tools can tell the audio is AI-generated. It can't be heard, and it can't be turned off.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section alt" aria-labelledby="faq-title">
+  <div class="wrap narrow">
+    <h2 id="faq-title">Questions</h2>
+    <details class="faq"><summary>Is it free?</summary><p>Yes. Voice Studio is free, with no account, no subscription and no limits on how much you make.</p></details>
+    <details class="faq"><summary>Why does macOS say it can't check the app?</summary><p>The app isn't signed with a paid Apple developer certificate yet. It's safe to open: follow the steps under <a href="#dl-mac">How to install on a Mac</a> (Open Anyway in Privacy &amp; Security, or right-click → Open).</p></details>
+    <details class="faq"><summary>How much does it download?</summary><p>The app itself is 16 MB. On first open it installs its engine (about 1 GB). The voice models are up to about 7 GB more if you choose every feature; only the speech engine (3.2 GB) is required. You see the size of each part before anything downloads.</p></details>
+    <details class="faq"><summary>Do I need a fast computer?</summary><p>On a Mac with Apple silicon, a few seconds of speech take a few seconds to make, and separating a 15-minute video takes about a minute. 16 GB of memory gives the smoothest experience.</p></details>
+    <details class="faq"><summary>Does it work offline?</summary><p>Yes. After the one-time setup everything runs offline. Only pasting a video link needs the internet.</p></details>
+    <details class="faq"><summary>Which languages does it speak?</summary><p>English, plus 22 more with the optional language pack: Arabic, Chinese, Danish, Dutch, Finnish, French, German, Greek, Hebrew, Hindi, Italian, Japanese, Korean, Malay, Norwegian, Polish, Portuguese, Russian, Spanish, Swahili, Swedish and Turkish.</p></details>
+    <details class="faq"><summary>How well does Separate speakers work?</summary><p>On test conversations of two to four people over film soundtracks, it found the right number of people every time, and about 88 % of what you hear in a person's track is that person. Where two people talk at once, that moment goes to the louder voice, and grunts or effects on top of someone's words stay in their track.</p></details>
+    <details class="faq"><summary>When are Windows and Linux coming?</summary><p>They're being prepared and tested. This page will offer them as soon as they're ready.</p></details>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <div class="brand small-brand"><img src="assets/icon.png" alt="" width="28" height="28"><span>Voice Studio</span></div>
+    <p class="small muted">Built on <a href="https://github.com/resemble-ai/chatterbox">Chatterbox</a>, <a href="https://github.com/adefossez/demucs">Demucs</a>, <a href="https://github.com/k2-fsa/sherpa-onnx">sherpa-onnx</a>, <a href="https://github.com/openai/whisper">Whisper</a> and <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>. Each keeps its own license.</p>
+    <p class="small muted"><a href="https://github.com/jumppack/voice-studio-app/releases">All releases</a></p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
