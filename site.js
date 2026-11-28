@@ -7,7 +7,7 @@
   var os = /Mac/i.test(plat) || /Mac OS X/i.test(ua) ? "mac" : /Win/i.test(plat) || /Windows/i.test(ua) ? "windows"
     : /Linux|X11/i.test(plat + ua) && !/Android/i.test(ua) ? "linux" : /Android|iPhone|iPad/i.test(ua) ? "mobile" : "other";
   var hero = document.getElementById("heroDownload"), heroText = document.getElementById("heroDownloadText"), note = document.getElementById("heroNote");
-  var mac = document.getElementById("macLink"), lin = document.getElementById("linuxLink");
+  var mac = document.getElementById("macLink"), lin = document.getElementById("linuxLink"), win = document.getElementById("windowsLink");
 
   if (os === "mac") {
     hero.href = mac.href;
@@ -20,8 +20,10 @@
     note.textContent = "For 64-bit Linux. Free, 17 MB.";
     document.getElementById("dl-linux").classList.add("recommended");
   } else if (os === "windows") {
-    heroText.textContent = "See downloads";
-    note.textContent = "Windows is coming soon. Voice Studio is available for Mac and Linux now.";
+    hero.href = win.href;
+    heroText.textContent = "Download for Windows";
+    note.textContent = "For Windows 10 and 11, 64-bit. Free, 15 MB.";
+    document.getElementById("dl-windows").classList.add("recommended");
   } else if (os === "mobile") {
     heroText.textContent = "See downloads";
     note.textContent = "Voice Studio is a desktop app. Open this page on your computer to download it.";
@@ -44,6 +46,12 @@
         lin.href = tgz.browser_download_url;
         if (os === "linux") hero.href = tgz.browser_download_url;
         document.getElementById("linuxSize").textContent = ".tar.gz · " + mb(tgz.size);
+      }
+      var zip = (latest.assets || []).filter(function (a) { return /windows.*\.zip$/i.test(a.name); })[0];
+      if (zip) {
+        win.href = zip.browser_download_url;
+        if (os === "windows") hero.href = zip.browser_download_url;
+        document.getElementById("windowsSize").textContent = ".zip · " + mb(zip.size);
       }
       if (dmg) {
         mac.href = dmg.browser_download_url;

@@ -47,7 +47,7 @@
         </a>
         <a class="btn btn-lg" href="#how">How it works</a>
       </div>
-      <p class="small muted" id="heroNote">For Mac with Apple silicon and 64-bit Linux. Windows is coming soon.</p>
+      <p class="small muted" id="heroNote">For Mac with Apple silicon, Windows and 64-bit Linux.</p>
     </div>
     <figure class="hero-shot">
       <img src="assets/separate.png" alt="Voice Studio's Separate speakers screen: a recording added, options for how many people talk, background removal and what to keep" width="1280" height="900" loading="eager">
@@ -184,13 +184,25 @@
           </ol>
         </details>
       </article>
-      <article class="card dl soon" aria-labelledby="dl-win-title">
+      <article class="card dl" id="dl-windows" aria-labelledby="dl-win-title">
         <div class="dl-head">
           <svg class="os" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5.5l7.5-1v7H3zM11.5 4.3L21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zM11.5 12.5H21V21l-9.5-1.3z" fill="currentColor"/></svg>
           <div><h3 id="dl-win-title">Windows</h3><p class="small muted">Windows 10 and 11, 64-bit</p></div>
         </div>
-        <span class="btn btn-block btn-disabled" role="note">Coming soon</span>
-        <p class="small muted">Being prepared and tested. Works best with an NVIDIA graphics card; other PCs use the processor, more slowly.</p>
+        <a class="btn btn-primary btn-block" id="windowsLink" href="https://github.com/jumppack/voice-studio-app/releases/latest/download/Voice-Studio-windows-x64.zip">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="ic"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="btn-lines"><span>Download for Windows</span><span class="btn-sub" id="windowsSize">.zip · 15 MB</span></span>
+        </a>
+        <details class="howto">
+          <summary>How to install on Windows</summary>
+          <ol>
+            <li>Unzip it: right-click the file, then <strong>Extract All</strong>.</li>
+            <li>In the <strong>Voice Studio</strong> folder, double-click <strong>Voice Studio.cmd</strong>. The first time, it installs its engine (about 1 GB; about 3 GB with an NVIDIA graphics card, which it detects by itself) into <code>%LOCALAPPDATA%\VoiceStudio</code>.</li>
+            <li>Voice Studio opens in your web browser. Keep its window open while you use it; close it to quit.</li>
+            <li>Next time, open <strong>Voice Studio</strong> from the Start Menu or your Desktop.</li>
+          </ol>
+          <p class="small">Uses an NVIDIA graphics card if you have one, and the processor otherwise, more slowly.</p>
+        </details>
       </article>
       <article class="card dl" id="dl-linux" aria-labelledby="dl-linux-title">
         <div class="dl-head">
@@ -220,7 +232,7 @@
       <table>
         <caption class="sr-only">System requirements</caption>
         <tbody>
-          <tr><th scope="row">Computer</th><td>Mac with Apple silicon (M1 or later), or a 64-bit Linux PC. Windows coming soon.</td></tr>
+          <tr><th scope="row">Computer</th><td>Mac with Apple silicon (M1 or later), or a 64-bit Windows 10 or 11 or Linux PC.</td></tr>
           <tr><th scope="row">Memory</th><td>8 GB minimum, 16 GB or more recommended</td></tr>
           <tr><th scope="row">Disk space</th><td>About 9 GB with every feature (the voice models are most of it)</td></tr>
           <tr><th scope="row">Internet</th><td>Only for the one-time setup, and when you paste a video link</td></tr>
@@ -256,8 +268,7 @@
     <details class="faq"><summary>Does it work offline?</summary><p>Yes. After the one-time setup everything runs offline. Only pasting a video link needs the internet.</p></details>
     <details class="faq"><summary>Which languages does it speak?</summary><p>English, plus 22 more with the optional language pack: Arabic, Chinese, Danish, Dutch, Finnish, French, German, Greek, Hebrew, Hindi, Italian, Japanese, Korean, Malay, Norwegian, Polish, Portuguese, Russian, Spanish, Swahili, Swedish and Turkish.</p></details>
     <details class="faq"><summary>How well does Separate speakers work?</summary><p>On test conversations of two to four people over film soundtracks, it found the right number of people every time, and about 88 % of what you hear in a person's track is that person. Where two people talk at once, that moment goes to the louder voice, and grunts or effects on top of someone's words stay in their track.</p></details>
-    <details class="faq"><summary>When is Windows coming?</summary><p>It's being prepared and tested on a real Windows PC. This page will offer it as soon as it's ready.</p></details>
-    <details class="faq"><summary>Does it use my graphics card?</summary><p>On a Mac it uses the Apple GPU. On Linux (and soon Windows) it uses an NVIDIA graphics card if you have one, and the processor otherwise, which works but is slower: a short sentence takes about 15 seconds instead of 2 or 3.</p></details>
+    <details class="faq"><summary>Does it use my graphics card?</summary><p>On a Mac it uses the Apple GPU. On Windows and Linux it uses an NVIDIA graphics card if you have one, and the processor otherwise, which works but is slower: a short sentence takes about 15 seconds instead of 2 or 3.</p></details>
   </div>
 </section>
 
