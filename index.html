@@ -198,7 +198,7 @@
           <ol>
             <li>Unzip it: right-click the file, then <strong>Extract All</strong>.</li>
             <li>In the <strong>Voice Studio</strong> folder, double-click <strong>Voice Studio.cmd</strong>. The first time, it installs its engine (about 1 GB; about 3 GB with an NVIDIA graphics card, which it detects by itself) into <code>%LOCALAPPDATA%\VoiceStudio</code>.</li>
-            <li>Voice Studio opens in your web browser. Keep its window open while you use it; close it to quit.</li>
+            <li>Voice Studio opens in its own window. Closing the window quits it. To update later, close Voice Studio first.</li>
             <li>Next time, open <strong>Voice Studio</strong> from the Start Menu or your Desktop.</li>
           </ol>
           <p class="small">Uses an NVIDIA graphics card if you have one, and the processor otherwise, more slowly.</p>
@@ -218,10 +218,10 @@
           <ol>
             <li>Unpack it: <code>tar -xzf Voice-Studio-linux-x86_64.tar.gz</code></li>
             <li>Run <code>./VoiceStudio/voice-studio</code>. The first time, it installs its engine (about 1 GB; about 3 GB with an NVIDIA graphics card, which it detects by itself) into <code>~/.local/share/voice-studio</code>.</li>
-            <li>Voice Studio opens in your web browser. Keep its terminal window open while you use it; close it to quit.</li>
+            <li>Voice Studio opens in its own window. Closing the window quits it.</li>
             <li>Next time, open <strong>Voice Studio</strong> from your applications menu.</li>
           </ol>
-          <p class="small">Uses the processor, or an NVIDIA graphics card if you have one. <em>Speak like the voice</em> works on Linux too.</p>
+          <p class="small">Uses the processor, or an NVIDIA graphics card if you have one. <em>Speak like the voice</em> works on Linux too. Its own window needs WebKitGTK, which most desktops have (if yours doesn't: <code>sudo apt install python3-gi gir1.2-webkit2-4.1</code>); without it, Voice Studio opens as a Chrome or Chromium app window.</p>
         </details>
       </article>
     </div>
